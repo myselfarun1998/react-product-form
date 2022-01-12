@@ -67,28 +67,28 @@ export default class App extends React.Component {
         {this.state.mobile}
         {this.state.pass}
         <form onSubmit={this.sumbitData}>
-          Name{' '}
+          <label>Enter your Name</label> <br />
           <input
             type="text"
             value={this.state.name1}
             onChange={this.changeName}
           />{' '}
           <br />
-          Email{' '}
+          <label>Enter your Email</label> <br />
           <input
             type="text"
             value={this.state.email}
             onChange={this.changeEmail}
           />
           <br />
-          Mobile{' '}
+          <label>Enter your Mobile</label> <br />
           <input
             type="text"
             value={this.state.mobile}
             onChange={this.changeMobile}
           />
           <br />
-          <label>Select your Shiping Address</label> <br />
+          <label>Enter your Shiping Address</label> <br />
           <input
             type="text"
             value={this.state.pass}
@@ -182,11 +182,15 @@ export default class App extends React.Component {
           />
           XXL <br />
           <br />
+          <label>Select your Color</label> <br />
+          <br />
           <input
             type="color"
             value={this.state.clr}
             onChange={this.changeColor}
           />
+          <br />
+          <br />
           {/* <input type="checkbox" onChange={this.ChangeCheck} value="aaa" />
           aaa
           <br />
