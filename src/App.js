@@ -4,6 +4,7 @@ import './style.css';
 export default class App extends React.Component {
   constructor() {
     super();
+
     this.state = {
       user: {
         name1: '',
@@ -18,6 +19,7 @@ export default class App extends React.Component {
       },
     };
   }
+
   changeName = (event) => {
     console.log(event.target.value);
     this.setState({ name1: event.target.value });
@@ -59,7 +61,9 @@ export default class App extends React.Component {
        `
     );
   };
+
   render() {
+    const { text } = this.state;
     return (
       <div>
         {this.state.name1}
